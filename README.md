@@ -5,8 +5,8 @@
 Penjelasan Mengenai Isi dari Tiap File dan Folder:
 
 1. best_rf_model.pkl - Model ML tebaik yang digunakan untuk Data Inference
-2. P1M2_hafizal_shakur.ipynb - Notebook yang berisi pengolahan data dengan python dimulai dari loading dataset hingga evaluasi model ML
-3. P1M2_hafizal_shakur_inf.ipynb - Notebook Data Inference yang berisi kegiatan mulai dari loading model hingga melakukan prediksi
+2. model_building.ipynb - Notebook yang berisi pengolahan data dengan python dimulai dari loading dataset hingga evaluasi model ML
+3. model_inf.ipynb - Notebook Data Inference yang berisi kegiatan mulai dari loading model hingga melakukan prediksi
 4. secondary_data.csv - File bersumber dari website yang akan digunakan sebagai dataset untuk proyek membuat ML
 5. url.txt - File yang berisikan url Dataset dan url Deployment
 6. description.md - File Markdown yang berisi tentang gambaran mengenai proyek Machine Learning
