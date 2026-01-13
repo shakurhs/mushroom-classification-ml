@@ -2,32 +2,33 @@
 
 ## Repository Outline
 
-Penjelasan Mengenai Isi dari Tiap File dan Folder:
+Explanation about the content of each file and folder:
 
-1. best_rf_model.pkl - Model ML tebaik yang digunakan untuk Data Inference
-2. model_building.ipynb - Notebook yang berisi pengolahan data dengan python dimulai dari loading dataset hingga evaluasi model ML
-3. model_inf.ipynb - Notebook Data Inference yang berisi kegiatan mulai dari loading model hingga melakukan prediksi
-4. secondary_data.csv - File bersumber dari website yang akan digunakan sebagai dataset untuk proyek membuat ML
-5. url.txt - File yang berisikan url Dataset dan url Deployment
-6. description.md - File Markdown yang berisi tentang gambaran mengenai proyek Machine Learning
-6. Deployment - Folder yang berisikan file terkait untuk melakukan deployment ke HuggingFace
+1. best_rf_model.pkl - The best ML model used for Data Inference.
+2. model_building.ipynb - Notebook containing data processing with Python, starting from loading dataset to ML model evaluation.
+3. model_inf.ipynb - Data Inference notebook containing activities from loading the model to making predictions.
+4. secondary_data.csv - File sourced from a website used as the dataset for this ML project.
+5. url.txt - File containing the Dataset URL and Deployment URL.
+6. Deployment - Folder containing related files to perform deployment to HuggingFace.
 
 
 ## Problem Background
 
-Model Machine Learning yang saya buat digunakan sebagai pedoman untuk menentukan sebuah spesies jamur yang layak dikonsumsi sebagai subtitusi makanan dan yang tidak. Bagi para penjelajah alam atau petualang yang memiliki jam terbang yang tinggi tentu saja memiliki keilmuan tentang alam yang luas. Mereka memiliki kapabilitas dalam mencari makanan di alam liar dalam keadaan terdesak. Seperti yang kita tahu, tidak semua kalangan memiliki pengalaman kehabisan makanan dalam keadaan terdesak. Sangat disayangkan apabila seseorang yang sedang berusaha bertahan hidup bernasib naas ketika mengonsumsi hasil alam yang tidak tepat. Akibat mengonsumsi asupan yang salah, gejala keracunan akan muncul mulai dari yang ringan seperti mual, pusing, muntah. Hingga gejala paling parah menyebabkan kelumpuhan atau meregang nyawa. Dengan begitu, diharapkan model Machine Learning ini digunakan sebaik mungkin untuk menghindari kejadian-kejadian yang tidak diinginkan ketika salah mengonsumsi jamur.
+This Machine Learning model is a guide to help identify if a mushroom species is safe to eat or dangerous.
+In survival situations, experienced explorers usually know how to find food in the wild. However, many people do not have this experience. It is very dangerous if someone tries to survive but eats the wrong mushroom. Eating toxic mushrooms can cause symptoms from mild nausea and vomiting to severe paralysis or even death.
+This project aims to prevent these accidents by providing a reliable way to check mushroom safety.
 
 ## Project Output
 
-Produk yang dihasilkan dari proyek ini adalah sebuah model Machine Learning yang ditampilkan menggunakan Python basic web app (streamlit) sebagai user interface.
+The product generated from this project is a Machine Learning model displayed using a basic Python web app (Streamlit) as the user interface.
 
 ## Data
 
-Dataset yang saya dapatkan berasal dari website UC Irvine Machine Learning Repository, dimana data tersebut berisikan tentang spesifikasi dan atribut pada sebuah spesies jamur. Data terdiri atas 61069 baris dan 21 kolom. Pada saat dimuat ke dalam data frame, terlihat dataset memiliki missing value yang banyak. Bahkan untuk kasus dimana jumlah missing value mencapai lebih dari 80% pada sebuah kolom, akhirnya saya memutuskan untuk drop kolom-kolom tersebut. Selebihnya missing value saya handle menggunakan SimpleImputer.
+The dataset I obtained comes from the UC Irvine Machine Learning Repository website, which contains specifications and attributes of mushroom species. The data consists of 61,069 rows and 21 columns. When loaded into a data frame, it shows that the dataset has many missing values. For cases where the number of missing values reached more than 80% in a column, I decided to drop those columns. The remaining missing values were handled using SimpleImputer.
 
 ## Method
 
-Proyek ini adalah sebuah proyek mengenai Supervised Machine Learning Classification Problem untuk menentukan pembagian kelas dari spesies jamur. Model yang digunakan dalam proyek ini adalah Random Forest Classification yang telah melalui proses Hyperparameter Tuning. Model Random Forest dipilih berdasarkan performa model terbaik dari model lain seperti Super Vector Machine, K-Nearest Neighbors, Decision Tree, dan AdaBoost. Kelimamodel tersebut dilakukan pengujian menggunakan Cross Validation untuk menghasilkan nilai Recall terbaik.
+This project is a Supervised Machine Learning Classification Problem to determine the class division of mushroom species. The model used in this project is Random Forest Classification that has gone through a Hyperparameter Tuning process. The Random Forest model was chosen based on the best performance compared to other models like Support Vector Machine, K-Nearest Neighbors, Decision Tree, and AdaBoost. These five models were tested using Cross Validation to produce the best Recall value.
 
 ## Stacks
 
